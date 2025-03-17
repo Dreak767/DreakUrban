@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreak Urban.</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: white;
+            box-sizing: border-box;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+        }
+        .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .grid-background {
+            background: url('https://www.transparenttextures.com/patterns/cubes.png');
+        }
+
+        /* Página principal */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            padding: 50px;
+        }
+        .text-section {
+            max-width: 500px;
+        }
+        h1 {
+            font-size: 4rem;
+            line-height: 1;
+            margin: 0;
+        }
+        p {
+            font-size: 1rem;
+            margin: 10px 0 30px;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: white;
+            border-radius: 30px;
+            padding: 5px 15px;
+            width: 250px;
+        }
+        .search-box input {
+            border: none;
+            outline: none;
+            flex: 1;
+        }
+        .search-box button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .image-section img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Sección About */
+        #about-page {
+            display: none;
+        }
+        .about-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            padding: 50px;
+        }
+        .about-image img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .about-content {
+            padding: 20px;
+        }
+        .about-content h2 {
+            font-size: 3rem;
+            margin: 0 0 20px;
+        }
+        .about-info {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        /* Sección Catálogo */
+        #catalogue-page {
+            display: none;
+        }
+        .catalogue-section {
+            padding: 50px;
+        }
+        .catalogue-title {
+            font-size: 3rem;
+            margin-bottom: 30px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            background: #111;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .product-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .product-name {
+            font-size: 1.5rem;
+            margin: 15px 0 10px;
+        }
+        .product-description {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+        .product-price {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">DREAK URBAN</div>
+        <nav>
+            <a href="#" id="home-link">INICIO</a>
+            <a href="#" id="about-link">NOSOTROS</a>
+            <a href="#" id="catalogue-link">CATALOGO</a>
+        </nav>
+        <div class="menu-icon">☰</div>
+    </header>
+
+    <!-- Página principal (Home) -->
+    <div id="home-page">
+        <div class="container grid-background">
+            <div class="text-section">
+                <h1>EXCIBICION<br>STREETWEAR</h1>
+                <p>Streetwear Presentacion</p>
+                <div class="search-box">
+                    <input type="text" placeholder="Search Product">
+                    <button>🔍</button>
+                </div>
+            </div>
+
+            <div class="image-section">
+                <img src="c:\Users\Administrator\Pictures\Remeras\Pagina\1742208974781.png" alt="Fashion Model">
+            </div>
+        </div>
+    </div>
+
+    <!-- Página About -->
+    <div id="about-page">
+        <div class="about-section grid-background">
+            <div class="about-image">
+                <img src="about-image-url.jpg" alt="About Image">
+            </div>
+            <div class="about-content">
+                <h2>CONTACT US</h2>
+                <p>Con esta informacion puedes contactarnos por alguna duda a resolver</p>
+                <div class="about-info">
+                    <div><strong>Correo:</strong> Dreakurbanbs@Gmail.com</div>
+                    <div><strong>Pagina:</strong> www.Dreakurban.com</div>
+                    <div><strong>Instagram:</strong> @DreakurbanAR</div>
+                    <div><strong>Telefono:</strong> 123-456-7890</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Página Catalogue -->
+    <div id="catalogue-page" class="catalogue-section grid-background">
+        <h2 class="catalogue-title">Nuestros productos</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="c:\Users\Administrator\Pictures\Remeras\Disenos\21 sin título_20250317060137.png" alt="Product 1">
+                <div class="product-name">Remera Oversize Urban (Black) </div>
+                <div class="product-description">Remera Estilo Moderno y urbano tela 100% Algodon</div>
+                <div class="product-price">$15,000 ARS</div>
+            </div>
+
+            <div class="product-card">
+                <img src="c:\Users\Administrator\Pictures\Remeras\Disenos\21 sin título_20250317061341.png" alt="Product 2">
+                <div class="product-name">Remera Oversize Urban (White)</div>
+                <div class="product-description">Remera Estilo Moderno y urbano tela 100% Algodon</div>
+                <div class="product-price">$15,000 ARS</div>
+            </div>
+            
+            <div class="product-card">
+                <img src="c:\Users\Administrator\Pictures\Remeras\Disenos\REMERA NEGRA BACK2_20250317071642.png" alt="Hoodie Oversize">
+                <div class="product-name">Remera Oversize Enemies (Black)</div>
+                <div class="product-description">Remera Estilo Moderno y urbano tela 100% Algodon</div>
+                <div class="product-price">$15,000 ARS</div>
+            </div>
+           
+            <div class="product-card">
+                <img src="c:\Users\Administrator\Pictures\Remeras\Disenos\REMERA NEGRA BACK2_20250317071928.png" alt="Hoodie Oversize">
+                <div class="product-name">Remera Oversize Enemies (White)</div>
+                <div class="product-description">Remera Estilo Moderno y urbano tela 100% Algodon</div>
+                <div class="product-price">$15,000 ARS</div>
+            </div>
+          
+            <div class="product-card">
+                <img src="hoodie.jpg" alt="Hoodie Oversize">
+                <div class="product-name">Hoodie Oversize</div>
+                <div class="product-description">Comfortable and stylish hoodie.</div>
+                <div class="product-price">$85</div>
+            </div>
+            
+
+        </div>
+    </div>
+
+    <!-- Script para navegación -->
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll("div[id$='-page']").forEach(page => page.style.display = 'none');
+            document.getElementById(pageId).style.display = 'block';
+        }
+        document.getElementById('home-link').addEventListener('click', () => showPage('home-page'));
+        document.getElementById('about-link').addEventListener('click', () => showPage('about-page'));
+        document.getElementById('catalogue-link').addEventListener('click', () => showPage('catalogue-page'));
+        showPage('home-page');
+    </script>
+
+</body>
+</html>
